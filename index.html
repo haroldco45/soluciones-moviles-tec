@@ -6,6 +6,7 @@
     <title>Soluciones Móviles TEC - Tarjeta Digital</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Definición de Variables de Color de la Marca */
         :root {
             --azul-tec: #004a99;
             --amarillo-tec: #ffce00;
@@ -14,6 +15,7 @@
             --gris-claro: #f4f4f4;
         }
 
+        /* Estilos Globales del Cuerpo */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--gris-claro);
@@ -25,6 +27,7 @@
             padding: 20px;
         }
 
+        /* Estilos de la Tarjeta */
         .card {
             background: var(--blanco);
             width: 100%;
@@ -35,6 +38,7 @@
             text-align: center;
         }
 
+        /* Estilos del Encabezado (Header) */
         .header {
             background-color: var(--azul-tec);
             padding: 30px 20px;
@@ -42,6 +46,7 @@
             position: relative;
         }
 
+        /* Contenedor Circular del Logo */
         .logo-container {
             width: 120px;
             height: 120px;
@@ -52,11 +57,14 @@
             justify-content: center;
             align-items: center;
             border: 4px solid var(--amarillo-tec);
-            overflow: hidden;
+            overflow: hidden; /* Importante para que la imagen no se salga */
         }
 
+        /* Estilos de la Imagen del Logo */
         .logo-container img {
-            width: 90%;
+            max-width: 90%; /* Ajuste para que el logo no toque el borde */
+            max-height: 90%;
+            display: block;
         }
 
         .header h1 {
@@ -71,10 +79,12 @@
             opacity: 0.9;
         }
 
+        /* Estilos del Contenido Principal */
         .content {
             padding: 25px;
         }
 
+        /* Distintivo de Promoción Animado */
         .badge-promo {
             background: var(--rojo-tec);
             color: white;
@@ -84,15 +94,17 @@
             font-weight: bold;
             font-size: 0.8rem;
             margin-bottom: 20px;
-            animation: pulse 2s infinite;
+            animation: pulse 2s infinite; /* Animación de pulso */
         }
 
+        /* Definición de la Animación de Pulso */
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
 
+        /* Estilos Base para los Botones */
         .btn {
             display: flex;
             align-items: center;
@@ -103,19 +115,22 @@
             border-radius: 12px;
             font-weight: 600;
             transition: all 0.3s ease;
-            gap: 10px;
+            gap: 10px; /* Espacio entre icono y texto */
         }
 
+        /* Colores Específicos de Botones */
         .btn-whatsapp { background-color: #25D366; color: white; }
         .btn-facebook { background-color: #1877F2; color: white; }
         .btn-tiktok { background-color: #000000; color: white; }
         .btn-maps { background-color: var(--azul-tec); color: white; }
 
+        /* Efecto Hover para los Botones */
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
+        /* Sección de Información de Texto */
         .info-section {
             font-size: 0.85rem;
             color: #666;
@@ -123,6 +138,7 @@
             line-height: 1.6;
         }
 
+        /* Estilos del Pie de Página (Footer) */
         .footer {
             background: #eee;
             padding: 15px;
@@ -138,7 +154,7 @@
     <div class="card">
         <div class="header">
             <div class="logo-container">
-                <img src="https://i.ibb.co/v4mK9Wq/tec-logo.png" alt="Logo TEC"> 
+                <img src="tec.PNG" alt="Logo TEC"> 
             </div>
             <h1>SOLUCIONES MÓVILES TEC</h1>
             <p>Tecnología, Accesorios y Electrodomésticos</p>
@@ -159,7 +175,7 @@
                 <i class="fab fa-tiktok"></i> Ver Catálogo en TikTok
             </a>
 
-            <a href="https://www.google.com/maps/search/Calle+21+%236-40,+Caucasia" class="btn btn-maps" target="_blank">
+            <a href="https://www.google.com/maps/search/?api=1&query=Yamaha%20Caucasia%20Antioquia" class="btn btn-maps" target="_blank">
                 <i class="fas fa-map-marker-alt"></i> Ubicación (Al lado de Yamaha)
             </a>
 
